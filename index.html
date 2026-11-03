@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PRIME – Lavage auto mobile</title>
+  <meta name="description" content="PRIME : lavage auto, petites réparations et pneus, directement chez vous. Application de démonstration.">
+  <meta name="theme-color" content="#07120F">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:ital,wght@1,800;1,900&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-banner">Démo · aucun paiement réel</div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="#/" class="logo">PRIME</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#/" data-route="home"><span class="ico" data-icon="home"></span><span>Accueil</span></a>
+        <a href="#/reserver" data-route="reserver"><span class="ico" data-icon="calendar"></span><span>Réserver</span></a>
+        <a href="#/boutique" data-route="boutique"><span class="ico" data-icon="bag"></span><span>Boutique</span><b class="badge" id="cart-badge" hidden>0</b></a>
+        <a href="#/suivi" data-route="suivi"><span class="ico" data-icon="pin"></span><span>Suivi</span></a>
+        <a href="#/compte" data-route="compte"><span class="ico" data-icon="user"></span><span>Compte</span></a>
+      </nav>
+      <p class="sidebar-foot">Lavage · Réparations · Pneus<br>Partenaire Koch-Chemie</p>
+    </aside>
+
+    <main id="app" tabindex="-1"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
